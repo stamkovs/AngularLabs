@@ -1,0 +1,8 @@
+export class Igrac {
+    public id: number;
+    public ime: string;
+    public prezime: string;
+    public tim: string;
+    public pozicija: string;
+    public plata: number;
+}
