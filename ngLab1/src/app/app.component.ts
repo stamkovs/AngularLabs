@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IgracService} from '../app/services/Igrac.service';
+import {igracService} from '../app/services/Igrac.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,5 @@ import {IgracService} from '../app/services/Igrac.service';
 })
 export class AppComponent {
   title = 'app';
+  public igraci: igrac[];
 }

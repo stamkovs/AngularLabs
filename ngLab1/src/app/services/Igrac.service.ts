@@ -3,10 +3,10 @@
  */
 
 import {Injectable} from '@angular/core';
-import {Igrac} from '../../app/model/igrac';
+import {igrac} from '../model/igrac';
 
 @Injectable()
-export class IgracService {
+export class igracService {
 
     constructor() {
     }

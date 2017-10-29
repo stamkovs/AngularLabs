@@ -1,4 +1,4 @@
-export class Igrac {
+export class igrac {
     public id: number;
     public ime: string;
     public prezime: string;
