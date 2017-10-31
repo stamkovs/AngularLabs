@@ -16,6 +16,4 @@ export class IgracDetailsComponent implements OnInit {
 
     ngOnInit() {
     }
-
-
 }
