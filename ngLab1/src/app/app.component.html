@@ -1,15 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="jumbotron">
-    <div class="card">
-      <h1 class="card-header">Igraci</h1>
-      <div class="card-block">
-      <ul class="list-group">
-        <li *ngFor="let igrac of igraci" (click)="onSelect(igrac)" class="list-group-item" [ngClass]="{'active': selectedIgrac == igrac}">
-          <span>{{igrac.firstName}}</span>{{igrac.lastName}}
-        </li>
-      </ul>
-      </div>
-      <app-igrac-details [igrac]="selectedIgrac"></app-igrac-details>
-    </div>
+  <router-outlet></router-outlet>
+  <!--<igrac-list></igrac-list>
+  <app-igrac-details [igrac]="selectedIgrac"></app-igrac-details>-->
 </div>
 

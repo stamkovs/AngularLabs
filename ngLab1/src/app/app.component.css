@@ -1,0 +1,8 @@
+.card {
+  width: 50%;
+  float: left;
+}
+
+button {
+  cursor: pointer;
+}

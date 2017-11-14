@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
 import {IgracManagementService} from './IgracManagement';
-import {Igrac} from './model/igrac';
+import {Component} from '@angular/core';
+import {Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -8,15 +9,12 @@ import {Igrac} from './model/igrac';
   styleUrls: ['./app.component.css'],
   providers: [IgracManagementService]
 })
-export class AppComponent implements OnInit{
-  constructor (private IgracManagement: IgracManagementService) { }
-  igraci: Igrac[];
-  selectedIgrac: Igrac;
+export class AppComponent {
+  title='my-app';
+  public igraciArray = [];
+  public selectedIgrac;
 
-  ngOnInit(): void {
-    this.igraci = this.IgracManagement.getIgraci();
-  }
-  onSelect(igrac: Igrac) {
-    this.selectedIgrac = igrac;
-  }
+
+  constructor (private _IgracSvc:IgracManagementService,private _router:Router) { }
+
 }

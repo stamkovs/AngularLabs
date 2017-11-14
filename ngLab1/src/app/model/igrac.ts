@@ -6,5 +6,6 @@ export class Igrac {
     position: string;
     salary: number;
     img: string;
-}
 
+    constructor () {}
+}

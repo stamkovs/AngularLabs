@@ -1,0 +1,11 @@
+<div class="card">
+  <h1 class="card-header">Igraci</h1>
+  <div class="card-block">
+    <ul class="list-group">
+      <li *ngFor="let igrac of igraciArray" (click)="selectIgrac(igrac)"  [routerLink]="['/details',igrac.id]" class="list-group-item" [ngClass]="{'active': selectedIgrac == igrac}">
+        <span>{{igrac.firstName}} {{igrac.lastName}}</span>
+      </li>
+    </ul>
+  </div>
+  <button class="btn btn-md btn-success mt-5">Add New Player</button>
+</div>

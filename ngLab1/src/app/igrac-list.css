@@ -1,0 +1,7 @@
+.card {
+  width: 50%;
+}
+
+.list-group-item:hover {
+  background: lightgrey;
+}
