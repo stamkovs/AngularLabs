@@ -7,13 +7,15 @@ import { IgracDetailsComponent } from './igrac-details/igrac-details.component';
 
 import { RouterModule } from '@angular/router';
 import { FormsModule }  from '@angular/forms';
+import {IgracCreateComponent} from "./create-igrac/new-igrac.component";
 
 
 @NgModule({
   declarations: [
     AppComponent,
     igracListComponent,
-    IgracDetailsComponent
+    IgracDetailsComponent,
+    IgracCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,14 @@ import { FormsModule }  from '@angular/forms';
       {
         path: 'details/:id',
         component: IgracDetailsComponent
+      },
+      {
+        path: 'edit/:id',
+        component: IgracCreateComponent
+      },
+      {
+        path: 'new',
+        component: IgracCreateComponent
       }
     ])
   ],

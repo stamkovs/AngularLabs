@@ -60,6 +60,21 @@ export class  IgracManagementService {
     return Promise.resolve(this.igraci);
   }
 
+  save(igrac: Igrac): Promise<Igrac> {
+    this.igraci.push(igrac);
+
+    return Promise.resolve(igrac);
+  }
+
+  edit(igracOriginal: Igrac,igracUpdated:Igrac): Promise<Igrac> {
+    // simulation of the change that the async call will make
+    // Object.assign(videosFromServer, this.videos);
+    // this.videos = videosFromServer;
+      Object.assign(igracOriginal, igracUpdated);
+
+    return Promise.resolve(igracUpdated);
+  }
+
   getIgracByID(id){
     const result = this.igraci.filter(igrac => igrac.id.toString() === id.id);
     return Promise.resolve(result[0])
